@@ -1,0 +1,19 @@
+#include <stdio.h>
+int binarySearch(int low, int high); // prototype
+ 
+// Let's take an example function as f(x) = x^2 - 10*x - 20
+// Note that f(x) can be any monotonocally increasing function
+int f(int x) { return (x*x - 10*x - 20); }
+ 
+
+
+
+
+
+/* Driver program to check above functions */
+int main()
+{
+    printf("The value n where f() becomes positive first is %d",
+           findFirstPositive());
+    return 0;
+}

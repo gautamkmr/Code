@@ -1,0 +1,17 @@
+#include<stdio.h>
+void Memset(void *ptr, int c, int n)
+{
+  void *s=ptr;
+  while(n--)
+   *ptr++ = (unsigned char)c;
+  
+  return s;
+} 
+int main()
+{
+  char str[]="Hello world\n";
+  
+  printf("%s\n",Memset(str,'$',4);
+  return 0;
+
+}
