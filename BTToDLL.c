@@ -82,16 +82,22 @@ void BTToDLL(struct node *root, struct node **head, struct node **tail)
   else
     *head = root;
 
+ /**********  Uncomment following code to make it circular doubly link list
+  struct node *Right = root->right;
+
+  (*head)->left = root;
+  root->right = *head;  
+  
+  *tail = root;
+  if(Right)
+    BTToDLL(Right, head, tail);
+
+  ***********delete the code below this if you want to circular DLL
+  ********************/
   *tail = root;
 
   if(root->right)
     BTToDLL(root->right,head,tail);
-/*  // Set the previous pointer
-    fixPrevPtr(root);
- 
-    // Set the next pointer and return head of DLL
-    return fixNextPtr(root);
-*/
 }
  
 // Traverses the DLL from left tor right
