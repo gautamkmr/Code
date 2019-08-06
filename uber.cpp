@@ -1,11 +1,3 @@
-/* Given n 2d points put them into k cluster such that the 
- * number of points are almost equally balanced among k clusters.
- * Minimize the sum of distance of each points from their centroid.
- * For e.g. with n=10 and k=3 you should have distribution 
- * cluster 1: 4 points
- * cluster 2: 3 points
- * cluster 3: 3 points
- */
 #include <iostream>
 #include <vector>
 #include <unordered_map>
